@@ -1,0 +1,31 @@
+
+{
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ıä˜Ëüÿÿÿÿ8²ş©íµ1
+{
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(üú·Œıÿÿÿÿ8³ş©íµ1
+{
+java:S22933"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÃŒ“ƒùÿÿÿÿ8³ş©íµ1
+m	java:S117d"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûùõú8´ş©íµ1
+r	java:S117o"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®•’ûÿÿÿÿ8´ş©íµ1
+r	java:S117o"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®•’ûÿÿÿÿ8´ş©íµ1
+3
+java:S1700L"Rename field "message"(£‹Ææ8µş©íµ1
+s
+java:S3008"QRename this field "MODEL$" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å’æ›øÿÿÿÿ8Éş©íµ1
+M
+java:S2160"+Override the "equals" method in this class.(ó±‰ÿıÿÿÿÿ8†Áìµ1
+W
+java:S1161a":Add the "@Override" annotation above this method signature(Òâíø8Îş©íµ1
+N
+java:S2160»"+Override the "equals" method in this class.(ÒêÜÈûÿÿÿÿ8Ñş©íµ1
+]
+java:S6213é":Rename this variable to not match a restricted identifier.(ğ‡ççùÿÿÿÿ8×ş©íµ1
+L
+java:S1905ø".Remove this unnecessary cast to "DatumWriter".(¥»Ñ³8Ùş©íµ1
+Q
+java:S1905".Remove this unnecessary cast to "DatumReader".(‹É¸şşÿÿÿÿ8Ùş©íµ1
+^
+java:S1128"ARemove this unused import 'org.apache.avro.generic.GenericArray'.(é¥œÿ8Áìµ1
+S
+java:S1128
+"6Remove this unused import 'org.apache.avro.util.Utf8'.(•®˜Õ8Áìµ1

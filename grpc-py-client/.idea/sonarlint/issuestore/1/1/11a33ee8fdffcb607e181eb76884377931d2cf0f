@@ -1,0 +1,6 @@
+
+jpython:S116"SRename this field "EchoMessage" to match the regular expression ^[_a-z][_a-z0-9]*$.(öŠ¤²
+Gpython:S1172"/Remove the unused function parameter "request".(åÅ
+fpython:S100"ORename method "EchoMessage" to match the regular expression ^[a-z_][a-z0-9_]*$.(åÅ
+‡python:S1542""jRename function "add_MessageServiceServicer_to_server" to match the regular expression ^[a-z_][a-z0-9_]*$.(Ÿ¬±¼şÿÿÿÿ
+fpython:S1004"ORename method "EchoMessage" to match the regular expression ^[a-z_][a-z0-9_]*$.(Á®úÊ

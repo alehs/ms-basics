@@ -1,0 +1,16 @@
+{
+    "type": "record",
+    "namespace": "org.as.avro.domain",
+    "name": "Message",
+    "version": "1",
+    "fields": [
+        {
+            "name": "id",
+            "type": "int"
+        },
+        {
+            "name": "message",
+            "type": "string"
+        }
+    ]
+}

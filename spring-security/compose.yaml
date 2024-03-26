@@ -1,0 +1,42 @@
+version: "3.8"
+
+services:
+  postgres:
+    container_name: postgres
+    hostname: postgres
+    image: postgres:16.0-alpine
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-changeme}
+      POSTGRES_DB: ${POSTGRES_DB:-testdb}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      # if 'pgdata' is not empty the sql scripts below will not execute
+      # to delete 'pgdata' you have to run 'docker-compose down --volumes'
+      # if folder 'sql' contains a few files they will be sorted by name by en_US.utf8 locale
+      - ./sql/01-create_tables.sql:/docker-entrypoint-initdb.d/01-create_tables.sql:ro
+      - ./sql/02-fill_tables.sql:/docker-entrypoint-initdb.d/02-fill_tables.sql:ro
+
+  pgadmin:
+    container_name: pgadmin
+    hostname: pgadmin
+    image: dpage/pgadmin4
+    restart: always
+    ports:
+      - 5051:80
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pgadmin4@pgadmin.org}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
+    volumes:
+      - pgadmin:/var/lib/pgadmin
+    depends_on:
+      - postgres
+
+volumes:
+  pgdata:
+    driver: local
+  pgadmin:
+    driver: local

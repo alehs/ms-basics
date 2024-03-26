@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" th:href="@{/css/header.css}">
+  <title>Blocked users page</title>
+</head>
+<body>
+<h1>Blocked users</h1>
+<div th:if="${blockedUsers}">
+  <table>
+    <thead>
+    <tr>
+      <th>User</th>
+      <th>Blocked since</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="user : ${blockedUsers}">
+      <td th:text="${user.getEmail()}"></td>
+      <td th:text="${user.getTimestamp()}"></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<p>Click <a th:href="@{/}">here</a> to return back</p>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Header</title>
+</head>
+<body>
+<div class="topnav" th:fragment="header">
+  <a class="active" th:href="@{/}">Home</a>
+  <a th:href="@{/info}">Info</a>
+  <a th:href="@{/about}">About</a>
+  <a th:href="@{/admin}">Admin</a>
+  <a th:href="@{/blocked}">Blocked</a>
+  <a th:href="@{/secret}">Generate secret</a>
+  <a th:href="@{/logout}">Log out</a>
+</div>
+</body>
+</html>

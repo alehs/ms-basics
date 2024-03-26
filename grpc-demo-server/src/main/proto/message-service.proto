@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package com.as.grpc.message.adapters.api;
+option java_package = "com.as.grpc.message.adapters.api";
+option java_multiple_files = true;
+
+service MessageService {
+  rpc EchoMessage(MessageRequest) returns (MessageResponse);
+}
+
+message MessageRequest {
+  string text = 1;
+}
+
+message MessageResponse {
+  string text = 1;
+  int64 id = 2;
+}

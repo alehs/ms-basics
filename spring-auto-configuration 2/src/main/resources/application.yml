@@ -1,0 +1,29 @@
+logging:
+  level:
+    org.springframework: debug
+
+spring:
+  h2:
+    console:
+      enabled: true
+  data:
+    jpa:
+      repositories:
+        bootstrap-mode: default
+  jpa:
+    defer-datasource-initialization: true
+    properties:
+      hibernate:
+        generate_statistics: true
+        format_sql: true
+    show-sql: true
+  security:
+    user:
+      name: testUser
+      password: testPassword
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

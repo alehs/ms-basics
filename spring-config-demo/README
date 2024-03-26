@@ -1,0 +1,10 @@
+Spring Auto Configuration
+ - Default datasource config is provided by condition ConditionalOnMissingBean
+
+Custom Configuration
+ - with profile 'dev' available, then custom configuration is used
+
+Spring Actuator
+ - default 'info' endpoint was overridden with custom implementation
+ - custom endpoint was added to expose custom info
+
